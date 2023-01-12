@@ -14,6 +14,7 @@ public class FileMethod {
             }
         }
     }
+
     private final Writer writer = new ConsoleWriter();
 
     public void readerFromFile() {
@@ -30,5 +31,5 @@ public class FileMethod {
     }
 
 
-    }
+}
 
