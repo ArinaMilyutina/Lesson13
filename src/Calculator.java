@@ -3,18 +3,22 @@ public class Calculator {
 
     public Operation calculate(Operation operation) {
         switch (operation.getType()) {
-            case "sum":
+            case "sum" -> {
                 operation.setResult(sum(operation.getNum1(), operation.getNum2()));
                 return operation;
-            case "sub":
+            }
+            case "sub" -> {
                 operation.setResult(sub(operation.getNum1(), operation.getNum2()));
                 return operation;
-            case "mul":
+            }
+            case "mul" -> {
                 operation.setResult(mul(operation.getNum1(), operation.getNum2()));
                 return operation;
-            case "div":
+            }
+            case "div" -> {
                 operation.setResult(div(operation.getNum1(), operation.getNum2()));
                 return operation;
+            }
         }
 
         return null;
