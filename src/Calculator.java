@@ -10,11 +10,13 @@ public class Calculator {
                 operation.setResult(sub(operation.getNum1(), operation.getNum2()));
                 return operation;
             case "mul":
-                operation.setResult(mul(operation.getNum1(),operation.getNum2()));
+                operation.setResult(mul(operation.getNum1(), operation.getNum2()));
                 return operation;
             case "div":
                 operation.setResult(div(operation.getNum1(), operation.getNum2()));
+                return operation;
         }
+
         return null;
     }
 
@@ -25,6 +27,12 @@ public class Calculator {
     private static double sub(double a, double b) {
         return a - b;
     }
-    private static double mul(double a, double b){ return a*b;}
-    private static double div(double a, double b){ return a/b;}
+
+    private static double mul(double a, double b) {
+        return a * b;
+    }
+
+    private static double div(double a, double b) {
+        return a / b;
+    }
 }
